@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img class="logoImg" src="images/Logo_Alura.png" />
+        <h1 class="tittle">Encriptador de mensajes</h1>
+      </div>
+      <div class="left">
+        <input
+          class="text-input"
+          id="inputText"
+          type="text"
+          placeholder="Ingrese el texto aquí"
+        />
+      </div>
+      
+      <div class="rigth">
+        <img src="images/Muñeco.png" id="imgRi"/>
+        <h1 id="text">Ningún mensaje fue encontrado</h1>
+
+        <textarea
+            id="text2" name="name" cols="80" rows="8">Ingrese el texto que desees encriptar o desencriptar.
+        </textarea>
+
+      <button id="copiar" type="button" name="button" onclick="copy()">¡Copiar!</button>
+      </div>
+      
+      <div class="left-button">
+      <p> <i class="bi bi-info-circle"></i> Solo minúsculas y sin acentos</p>
+      <button type="button" id="boton-encriptar" onclick="encriptar()">Encriptar</button>
+      <button type="button" id="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+    
+     </div>
+    </div>
+  </body>
+
+  <footer>
+    <div  class="footer-parragraph">
+      <p> 
+        &#169 Andrea Carrillo Oporto (2022)
+      </p>
+    </div>
+</footer>
+
+</html>
